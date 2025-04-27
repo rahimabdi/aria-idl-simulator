@@ -120,9 +120,11 @@ contentAttributesSelect.addEventListener("change", (event) => {
 
     const tryItOutExplanation = document.createElement("p");
     tryItOutExplanation.innerHTML = `
-      Note: When the content attribute is absent, getting the content attribute via JavaScript with 
-      <code>el.getAttribute("${selectedContentAttribute}")</code> returns <code>null</code>. Also, when the content attribute is absent, 
-      getting the IDL attribute returns the missing value default. Setting the IDL attribute to <code>null</code> deletes the content attribute. 
+      <ul><li>When resolving an attribute's keyword, this performs a space-trimmed ASCII-insensitive match for the attribute's value. For example, 
+      "true"/"tRUe"/"TRUe"/" truE" all match an enumerated attribute that has a keyword/state of "true".</li><li>When the content attribute 
+      is absent, getting the content attribute via JavaScript with <code>el.getAttribute("${selectedContentAttribute}")</code> returns <code>null</code>. 
+      Also, when the content attribute is absent, getting the IDL attribute returns the missing value default.</li><li>Setting 
+      the IDL attribute to <code>null</code> deletes the content attribute.</li></ul>
     `;
     detailsContainer.appendChild(tryItOutExplanation);
 
