@@ -122,7 +122,7 @@ contentAttributesSelect.addEventListener("change", (event) => {
     tryItOutExplanation.innerHTML = `
       Note: When the content attribute is absent, getting the content attribute via JavaScript with 
       <code>el.getAttribute("${selectedContentAttribute}")</code> returns <code>null</code>. Also, when the content attribute is absent, 
-      getting the IDL attribute returns the missing value default.
+      getting the IDL attribute returns the missing value default. Setting the IDL attribute to <code>null</code> deletes the content attribute. 
     `;
     detailsContainer.appendChild(tryItOutExplanation);
 
