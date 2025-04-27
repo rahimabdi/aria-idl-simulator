@@ -1,6 +1,6 @@
 # ARIA IDL Simulator
 
-Deployed to GitHub pages: https://rahimabdi.github.io/aria-idl-simulator/.
+Visit: https://rahimabdi.github.io/aria-idl-simulator/.
 
 ## General notes
 
