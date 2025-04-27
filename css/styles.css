@@ -1,0 +1,35 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    vertical-align: top;
+    text-align: left;
+  }
+
+.try-it-out-button {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #007BFF; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.try-it-out-button:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px);
+}
+
+.try-it-out-button:active {
+  background-color: #004494;
+  transform: translateY(0);
+}
